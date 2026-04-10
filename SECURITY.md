@@ -7,11 +7,10 @@ We normally support only the most recently released version with bug fixes, secu
 
 The following summarizes the support status of recent QtPy versions.
 
-| Version  | Supported          |
-| -------- | ------------------ |
-| 2.0.x    | :heavy_check_mark: |
-| <2       | :x:                |
-
+| Version | Supported          |
+|---------|--------------------|
+| 2.0.x   | :heavy_check_mark: |
+| <2      | :x:                |
 
 
 ## Reporting a Vulnerability
@@ -21,5 +20,5 @@ Please be sure to carefully document the vulnerability, including a summary, des
 Further information and advice or patches on how to mitigate it is always welcome.
 You can usually expect to hear back within 1 week, at which point we'll inform you of our evaluation of the vulnerability and what steps we plan to take, and will reach out if we need further clarification from you.
 We'll discuss and update the advisory thread, and are happy to update you on its status should you further inquire.
-While this is a volunteer project and we don't have financial compensation to offer, we can certainly publicly thank and credit you for your help if you would like.
+While this is a volunteer project, and we don't have financial compensation to offer, we can certainly publicly thank and credit you for your help if you would like.
 Thanks!

@@ -28,6 +28,13 @@ if [ "$USE_CONDA" = "Yes" ]; then
         QT_SPECS="qt6-main=${PYSIDE6_QT_VERSION} pyside6=${PYSIDE6_VERSION}"
         if [ "${!QT_VERSION_VAR:0:3}" = "6.8" ]; then
             QT_SPECS+=" qt6-multimedia=${PYSIDE6_QT_VERSION}"
+        elif [ "${!QT_VERSION_VAR:0:4}" = "6.12" ]; then
+            QT_SPECS+=" qt6-multimedia=${PYSIDE6_QT_VERSION} qt6-sensors=${PYSIDE6_QT_VERSION} qt6-serialport=${PYSIDE6_QT_VERSION}"
+        fi
+    elif [ "${1}" = "pyqt6" ]; then
+        QT_SPECS="qt6-main=${PYQT6_QT_VERSION} pyqt6=${PYQT6_VERSION}"
+        if [ "${!QT_VERSION_VAR:0:4}" = "6.12" ]; then
+            QT_SPECS+=" pyqt6-multimedia=${PYQT6_QT_VERSION} pyqt6-serialport=${PYQT6_QT_VERSION} pyqt6-positioning=${PYQT6_QT_VERSION}"
         fi
     else
         exit 1

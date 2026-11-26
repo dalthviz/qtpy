@@ -9,6 +9,10 @@ from tests.utils import using_conda
     reason="QtStateMachine has been added to PyQt6 in version 6.9",
 )
 @pytest.mark.skipif(
+    PYQT6 and using_conda(),
+    reason="Not available on PyQt6 with conda",
+)
+@pytest.mark.skipif(
     PYSIDE6 and using_conda(),
     reason="Not available on PySide6 with conda",
 )
@@ -30,6 +34,10 @@ def test_qtstatemachine():
 @pytest.mark.skipif(
     PYQT6 and int(PYQT_VERSION.split(".")[1]) < 9,
     reason="QtStateMachine has been added to PyQt6 in version 6.9",
+)
+@pytest.mark.skipif(
+    PYQT6 and using_conda(),
+    reason="Not available on PyQt6 with conda",
 )
 @pytest.mark.skipif(
     PYSIDE6 and using_conda(),

@@ -218,17 +218,17 @@ The current test matrix looks something like this:
 |---------|-------------------|--------------------|----------------------------|--------------------|----------------------------|
 | OS      | Binding / manager | conda              | pip                        | conda              | pip                        |
 | Linux   | PyQt5             | 5.15               | 5.15 (with extras)         | 5.15               | 5.15                       |
-|         | PyQt6             | skip (unavailable) | 6.8 (with extras)          | skip (unavailable) | 6.8                        |
+|         | PyQt6             | 6.12               | 6.8 (with extras)          | 6.12               | 6.8                        |
 |         | PySide2           | 5.15               | skip (no wheels available) | skip (unavailable) | skip (no wheels available) |
-|         | PySide6           | 6.8                | 6.8                        | 6.8                | 6.8                        |
+|         | PySide6           | 6.12               | 6.12                       | 6.8                | 6.8                        |
 | Windows | PyQt5             | 5.15               | 5.15 (with extras)         | 5.15               | 5.15                       |
-|         | PyQt6             | skip (unavailable) | 6.8 (with extras)          | skip (unavailable) | 6.8                        |
+|         | PyQt6             | 6.12               | 6.8 (with extras)          | 6.12               | 6.8                        |
 |         | PySide2           | 5.15               | skip (no wheels available) | skip (unavailable) | skip (no wheels available) |
-|         | PySide6           | 6.8                | 6.8                        | 6.8                | 6.8                        |
+|         | PySide6           | 6.12               | 6.8 (with extras)          | 6.8                | 6.8                        |
 | MacOS   | PyQt5             | skip               | 5.15 (with extras)         | 5.15               | 5.15                       |
-|         | PyQt6             | skip               | 6.8 (with extras)          | skip (unavailable) | 6.8                        |
+|         | PyQt6             | skip               | 6.8 (with extras)          | 6.12               | 6.8                        |
 |         | PySide2           | skip               | skip (no wheels available) | skip (unavailable) | skip (no wheels available) |
-|         | PySide6           | skip               | 6.8                        | 6.8                | 6.8                        |
+|         | PySide6           | skip               | 6.12                       | 6.8                | 6.8                        |
 
 **Note**: The mentioned extra packages for the PyQt bindings are the following:
 

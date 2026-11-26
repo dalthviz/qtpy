@@ -63,8 +63,10 @@ def test_load_ui(qtbot):
     PYSIDE6
     and using_conda()
     and _parse_version(PYSIDE_VERSION) < _parse_version("6.5")
-    and (sys.platform in ("darwin", "linux")),
-    reason="pyside6-uic command not contained in all conda-forge packages.",
+    and (sys.platform in ("darwin", "linux"))
+    or PYSIDE6
+    and _parse_version(PYSIDE_VERSION) == _parse_version("6.12"),
+    reason="pyside6-uic command not contained in all conda-forge packages/versions.",
 )
 def test_load_ui_type(qtbot):
     """

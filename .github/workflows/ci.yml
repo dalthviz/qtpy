@@ -55,9 +55,12 @@ jobs:
           special-invocation: 'xvfb-run --auto-servernum '  # Needed for GUI tests to work
         - python-version: '3.13'
           pyqt5-version: '5.15'
-          skip-pyside2: true  # Unavailable for Python 3.13+
+          pyside2-version: '5.15'  # Available for Python >=3.9,<=3.13 on conda-forge
           pyqt6-version: '6.8'
           pyside6-version: '6.8'
+        - python-version: '3.13'
+          use-conda: 'No'
+          skip-pyside2: true  # Pyside2 wheels don't support Python 3.11+
         - python-version: '3.11'
           pyqt5-version: '5.15'  # Python 3.11 needs 5.15+
           pyside2-version: '5.15'  # Python 3.11 needs 5.15+
@@ -76,10 +79,6 @@ jobs:
           python-version: '3.11'
           use-conda: 'Yes'
           pyside6-version: '6.12'  # Test upper bound
-        - os: macos-15-intel
-          python-version: '3.11'
-          use-conda: 'No'
-          pyside2-version: '5.15'  # Test upper bound
         exclude:
         - os: macos-15-intel
           python-version: '3.11'
